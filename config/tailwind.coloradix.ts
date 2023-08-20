@@ -1,11 +1,11 @@
-import coloradix, { mauve, indigo } from "@coloradix/tailwindcss";
+import coloradix, { slate, indigo } from "@coloradix/tailwindcss";
 
 export default coloradix({
-  mauve,
+  slate,
   indigo,
 })
   .alias({
-    neutral: "mauve",
+    neutral: "slate",
     primary: "indigo",
   })
   .overlay(true)
