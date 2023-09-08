@@ -22,6 +22,9 @@ const spacing = (property: string) => {
 };
 
 export const safelist = [
+  ...responsive("hidden", "block", "inline-block", "flex", "inline-flex"),
+  ...responsive("items-center"),
+  ...responsive("justify-center", "justify-between"),
   ...responsive(
     ...spacing("m"),
     ...spacing("mx"),
@@ -40,4 +43,6 @@ export const safelist = [
     ...spacing("pb"),
     ...spacing("pl")
   ),
+  ...responsive(...spacing("gap")),
+  ...responsive("rounded-sm", "rounded", "rounded-lg", "rounded-xl", "rounded-2xl", "rounded-3xl"),
 ] satisfies Config["safelist"];

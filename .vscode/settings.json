@@ -1,6 +1,5 @@
 {
   "tailwindCSS.experimental.classRegex": [
-    // need a regex master to simplify this
     ["klass\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
     ["klass\\<.*?\\>\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
     ["reklass\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],

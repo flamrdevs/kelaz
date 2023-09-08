@@ -5,3 +5,7 @@
 body {
   @apply bg-neutral-1 text-neutral-12;
 }
+
+.lucide {
+  stroke-width: 1.5;
+}

@@ -25,6 +25,44 @@ const spacing = (property: string) => {
   };
 };
 
+export type DisplayVariants = VariantsOf<typeof Display>;
+export const Display = reklass({
+  conditions,
+  defaultCondition,
+  variants: {
+    d: {
+      none: "hidden",
+      block: "block",
+      iblock: "inline-block",
+      flex: "flex",
+      iflex: "inline-flex",
+    },
+  },
+});
+
+export type AlignVariants = VariantsOf<typeof Align>;
+export const Align = reklass({
+  conditions,
+  defaultCondition,
+  variants: {
+    ai: {
+      center: "items-center",
+    },
+  },
+});
+
+export type JustifyVariants = VariantsOf<typeof Justify>;
+export const Justify = reklass({
+  conditions,
+  defaultCondition,
+  variants: {
+    jc: {
+      center: "justify-center",
+      between: "justify-between",
+    },
+  },
+});
+
 export type MarginVariants = VariantsOf<typeof Margin>;
 export const Margin = reklass({
   conditions,
@@ -52,5 +90,30 @@ export const Padding = reklass({
     pr: spacing("pr"),
     pb: spacing("pb"),
     pl: spacing("pl"),
+  },
+});
+
+export type GapVariants = VariantsOf<typeof Gap>;
+export const Gap = reklass({
+  conditions,
+  defaultCondition,
+  variants: {
+    gap: spacing("gap"),
+  },
+});
+
+export type BorderVariants = VariantsOf<typeof Border>;
+export const Border = reklass({
+  conditions,
+  defaultCondition,
+  variants: {
+    radius: {
+      sm: "rounded-sm",
+      md: "rounded",
+      lg: "rounded-lg",
+      xl: "rounded-xl",
+      "2xl": "rounded-2xl",
+      "3xl": "rounded-3xl",
+    },
   },
 });

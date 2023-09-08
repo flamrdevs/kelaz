@@ -1,11 +1,11 @@
-import { Box, Center } from "~/components/core";
+import { Center, Text } from "~/components/core";
 
 export default function RootNotFound() {
   return (
-    <Box as={Center} className="w-screen h-screen overflow-hidden">
-      <Box as="span" className="text-xl font-semibold select-none">
+    <Center className="w-screen h-screen overflow-hidden">
+      <Text size="xl" weight={400} className="select-none">
         404 | Page not found
-      </Box>
-    </Box>
+      </Text>
+    </Center>
   );
 }

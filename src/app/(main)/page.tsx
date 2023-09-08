@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { Box, Center } from "~/components/core";
+import { Center, Text } from "~/components/core";
 
 export const metadata: Metadata = {
   title: "Kelaz",
@@ -9,10 +9,10 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <Box as={Center}>
-      <Box as="span" className="text-lg font-medium select-none">
+    <Center>
+      <Text size="lg" weight={500} className="select-none">
         Home
-      </Box>
-    </Box>
+      </Text>
+    </Center>
   );
 }

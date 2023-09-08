@@ -12,10 +12,17 @@ const Box = reklassed("div", {
   conditions: reklass.conditions,
   defaultCondition: reklass.defaultCondition,
   variants: {
+    ...reklass.Display.o.variants,
+    ...reklass.Align.o.variants,
+    ...reklass.Justify.o.variants,
     ...reklass.Margin.o.variants,
     ...reklass.Padding.o.variants,
+    ...reklass.Gap.o.variants,
+    ...reklass.Border.o.variants,
   },
 });
+
+if (__DEV__) (Box as any).displayName = "Box";
 
 export type { BoxProps, BoxVariants };
 export default Box;
