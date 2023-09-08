@@ -8,5 +8,4 @@ export default coloradix({
     neutral: "slate",
     primary: "indigo",
   })
-  .overlay(true)
-  .enable(true);
+  .build();
