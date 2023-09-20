@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function Contact() {
   return (
     <Center>
-      <Text size="lg" weight={500} className="select-none">
+      <Text size="lg" weight="5" className="select-none">
         Contact
       </Text>
     </Center>

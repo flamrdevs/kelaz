@@ -25,11 +25,11 @@ const Text = klassed("span", {
       "7xl": "text-7xl",
     },
     weight: {
-      300: "font-light",
-      400: "font-normal",
-      500: "font-medium",
-      600: "font-semibold",
-      700: "font-bold",
+      "3": "font-light",
+      "4": "font-normal",
+      "5": "font-medium",
+      "6": "font-semibold",
+      "7": "font-bold",
     },
   },
 });

@@ -7,7 +7,7 @@ import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 
 import { motion } from "framer-motion";
 
-import { cxs } from "@klass/core";
+import clsx from "clsx";
 
 const NavLink = (props: { href: string; label: string }) => {
   const pathname = usePathname();
@@ -24,7 +24,7 @@ const NavLink = (props: { href: string; label: string }) => {
           {active && (
             <motion.span className="absolute -bottom-1 left-0 w-full h-px bg-neutral-9 rounded-full z-10" layoutId="navlink-active" />
           )}
-          <span className={cxs("z-20", active ? "text-neutral-12" : "text-neutral-10 hover:text-neutral-11")}>{props.label}</span>
+          <span className={clsx("z-20", active ? "text-neutral-12" : "text-neutral-10 hover:text-neutral-11")}>{props.label}</span>
         </Link>
       </NavigationMenu.Link>
     </NavigationMenu.Item>

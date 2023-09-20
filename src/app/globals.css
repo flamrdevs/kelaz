@@ -2,8 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
 body {
   @apply bg-neutral-1 text-neutral-12;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--neutral-5));
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--neutral-8));
+}
+
+::-moz-selection {
+  @apply bg-primary-9 text-white;
+}
+
+::selection {
+  @apply bg-primary-9 text-white;
 }
 
 .lucide {
